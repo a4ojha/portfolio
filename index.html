@@ -1,9 +1,9 @@
 <!DOCTYPE html>
   <style>
-    .title {
+    .text {
       font-family: "Comic Sans MS", sans-serif;
       font-weight: 100;
-      font-size: 25px;
+      font-size: 20px;
       display: flex;
       justify-content: center;
     }
@@ -12,8 +12,7 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 50%;
-      width: 200px;
+      width: 150px;
     }
 
     .a {
@@ -33,6 +32,11 @@
       align-items: center;
     }
 
+    .centered-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
   </style>
 
@@ -41,13 +45,21 @@
       <title>Adon's Portfolio</title>
     </head>
     <body>
-      <p class="title">oops, this site is under construction...</p>
+      <p class="text" style="font-size: 25px;">oops, this site is under construction...</p>
       <img class="gif" src="pictures/construction.gif">
-      <p class="title" style="font-size: 20px; margin-top: 100px;">come back later though! i promise i'm making something cool...</p>
+      <p class="text" style="margin-top: 100px;">come back later though! i promise i'm making something cool...</p>
+
+      <div class="centered-content" style="margin-top: 200px;">
+        <span class="text" style="display:inline; vertical-align: top; margin-right: 10px;"> my youtube clone: </span>
+        <a href="https://adonojha.com/youtube/youtube.html" target="_blank">
+          <img style="width: 30px; display:inline; vertical-align: top; margin-top: 4px;" src="pictures/youtubelogo.png">
+        </a>
+      </div> 
+
     </body>
 
     <footer>
-      <p class="title" style="font-size: 20px; margin-top: 300px;">connect with me!</p>
+      <p class="text" style="margin-top: 50px;">connect with me!</p>
 
       <div class="socials-container">
         <a href="https://www.linkedin.com/in/adon-ojha-34b202259/" target="_blank">
