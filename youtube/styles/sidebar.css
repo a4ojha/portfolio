@@ -9,26 +9,42 @@
     background-color: white;
 }
 
+.dark-mode .sidebar {
+    background-color: rgb(16, 16, 16);
+}
+
 .sidebar-link {
     height: 74px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: background-color 0.25s, color 0.25s;
 }
 
 .sidebar-link:hover {
     background-color: rgb(240, 240, 240);
-    transition: background-color 0.25s, color 0.25s;
     cursor: pointer;
+}
+
+.dark-mode .sidebar-link:hover {
+    background-color: rgb(25, 25, 25);
 }
 
 .sidebar-link img {
     height: 24px;
     margin-bottom: 4px;
-}    
+}
+
+.dark-mode .sidebar-link img {
+    filter: brightness(0) invert(1);
+}
 
 .sidebar-link div {
     font-family: Roboto, Arial;
     font-size: 10px;
 }    
+
+.dark-mode .sidebar-link div {
+    color: white;
+}
