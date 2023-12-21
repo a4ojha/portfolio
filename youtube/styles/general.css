@@ -1,4 +1,4 @@
-p {
+* {
     font-family: Roboto, Arial;
     margin-top: 0;
     margin-bottom: 0;
@@ -14,5 +14,18 @@ body {
     padding-top: 80px;
     padding-left: 96px;
     padding-right: 24px;
+    padding-bottom: 50px;
     background-color: rgb(250, 250, 250);
+}
+
+.dark-mode {
+    background-color: rgb(14, 14, 14);
+}
+
+.dark-mode p {
+    color: white;
+}
+
+.dark-mode .video-stats {
+    color: rgb(132, 132, 132);
 }
