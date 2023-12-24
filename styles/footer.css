@@ -1,0 +1,128 @@
+.footer {
+    position: relative;
+    width: 100%;
+    background: #000000;
+    opacity: 0.9;
+    padding: 20px 50px;
+    display: block; /* Ensure it's block-level */
+    text-align: center;
+    margin-top: 200px;
+}
+
+.dark-mode .footer {
+    background: rgb(255, 255, 255);
+}
+
+.social-icon,
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+    list-style: none;
+}
+
+.social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.25s;
+}
+
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+.menu__link {
+    font-size: 16px;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.25s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.dark-mode .menu__link {
+    color: black;
+}
+
+.menu__link:hover {
+    opacity: 1;
+}
+
+.icon {
+    width: 30px;
+    filter: brightness(0) invert(1);
+    -webkit-transition: -webkit-filter 500ms linear, opacity 0.25s;
+}
+
+.dark-icon {
+    width: 30px;
+    margin-top: 4px; 
+    -webkit-transition: -webkit-filter 500ms linear, opacity 0.25s;
+}
+
+.dark-mode .dark-icon {
+    filter: brightness(0) invert(1);
+}
+
+.icon:hover, .dark-icon:hover {
+    opacity: 80%;
+}
+
+.dark-mode .icon {
+    filter: brightness(0);
+}
+
+.dark-mode .logo {
+    filter: brightness(0) invert(1);
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-bar {
+    margin-top: 10px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    cursor: pointer;
+    padding: 5px;
+    border-style: groove;
+    border-radius: 5px;
+}
+  
+.theme-text {
+    color: white;
+    font-size: 14px; 
+    margin-left: 6px; 
+    margin-top: 0; 
+    margin-bottom: 0;
+    transition: color 0.25s;
+}
+
+.dark-mode .theme-text {
+    color: black;
+}

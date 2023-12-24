@@ -1,0 +1,72 @@
+*, html {
+    scroll-behavior: smooth !important;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh;
+    transition: background-color 0.25s, color 0.25s;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    text-decoration-line: underline;
+    font-weight: 700;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.link:hover {
+    transform: translateY(-2px);
+}
+
+.email {
+    display: inline;
+    text-decoration-line: underline;
+}
+
+.all-content-container {
+    flex: 1;
+}
+
+.dark-mode {
+    background-color: rgb(18, 18, 18);
+    color: white;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.text {
+    font-weight: 100;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    color: inherit;
+}
+
+.email {
+    width: 12px;
+}
+
+.phone {
+    width: 10px;
+}
