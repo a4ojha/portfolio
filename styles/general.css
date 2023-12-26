@@ -1,5 +1,5 @@
 @media screen and (max-width: 600px) {
-    body {
+    body, p {
         font-size: 18px; /* Larger font for mobile */
     }
 }
