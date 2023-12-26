@@ -2,6 +2,9 @@
     body, p {
         font-size: 18px; /* Larger font for mobile */
     }
+    .heading {
+        font-size: 24px;
+    }
 }
 
 *, html {
