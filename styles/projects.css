@@ -43,7 +43,7 @@
 .project-media img {
     display: block;
     width: 100%; /* Adjust as needed */
-    height: fit-content;
+    height: auto;
     padding: 15px;
     border-radius: 22px;
 }
