@@ -1,3 +1,9 @@
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 18px; /* Larger font for mobile */
+    }
+}
+
 *, html {
     scroll-behavior: smooth !important;
 }
