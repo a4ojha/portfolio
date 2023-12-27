@@ -10,6 +10,7 @@
 *, html {
     scroll-behavior: smooth !important;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -37,16 +38,29 @@ body {
 }
 
 .link {
+    position: relative;
     text-decoration: none;
     color: inherit;
-    text-decoration-line: underline;
     font-weight: 700;
     display: inline-block;
-    transition: transform 0.5s;
+    padding-bottom: 3px; /* Adjust to position the underline */
 }
 
-.link:hover {
-    transform: translateY(-2px);
+.link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Position right at the text bottom */
+    width: 100%;
+    height: 0.5px; /* Initial thickness */
+    background: currentColor;
+    transition: transform 0.3s; /* Transition for the transform property */
+    transform-origin: left center; /* Ensures the scaling is from the left */
+    transform: scaleY(1); /* Initial scale */
+}
+
+.link:hover::after {
+    transform: scaleY(3); /* Scale up the width on hover */
 }
 
 .email {
