@@ -10,7 +10,6 @@
 *, html {
     scroll-behavior: smooth !important;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -92,4 +91,9 @@ body {
 
 .phone {
     width: 10px;
+}
+
+.dark-mode .email,
+.dark-mode .phone {
+    filter: brightness(0) invert(1);
 }
