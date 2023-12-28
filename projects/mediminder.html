@@ -16,7 +16,7 @@
     </head>
 
     <body class="body">
-      <a class="logo-link" href="https://adonojha.com">
+      <a class="logo-link" href="https:/adonojha.com">
         <img id="logo-btn" class="logo" src="../pictures/Logo4.png">
       </a>
     
@@ -94,15 +94,29 @@
           <p class="body" style="margin-bottom: 20px; margin-top: 4px;">
           </p>
         </div>
-        <div class="documentation-row">
-          <span style="font-weight: 700;">Design Document</span>
-          <embed class="document" src="../pdf/Design Document.pdf#view=FitH" type="application/pdf" styles="margin-top: 20px;">
-        </div>
-        <div style="margin-bottom: 30px;"></div>
-        <div class="documentation-row">
-          <span style="font-weight: 700;">Design Process</span>
+
+        <div style="text-align: center">
+          <p style="font-weight: 700;">Design Document</p>
+          <embed class="document-portrait" src="../pdf/Design Document.pdf#view=FitH" type="application/pdf">
+          <div class="download-pdf-button" type="submit" onclick="window.open('../pdf/Design Document.pdf')">
+            <span style="margin-right: 5px;">Open in new tab</span>
+            <img class="small-icon" src="../pictures/newtab.png">
+          </div>
+        
+          <div style="margin-bottom: 70px;"></div>
+
+          <p style="font-weight: 700;">Design Process</p>
           <embed class="document-landscape" src="../pdf/Design Process Review.pdf#view=FitH" type="application/pdf">
+
+          <div class="download-pdf-button" type="submit" onclick="window.open('../pdf/Design Process Review.pdf')">
+            <span style="margin-right: 5px;">Open in new tab</span>
+            <img class="small-icon" src="../pictures/newtab.png">
+          </div>
+
         </div>
+
+        </div>
+
         <div style="margin-bottom: 30px;"></div>
         <div class="gradient-line odd"></div>     
       </div>
@@ -130,7 +144,7 @@
         <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/adon_05" target="_blank">
           <img id="gitlogo" class="icon" src="../pictures/x-logo.png">
           </a></li>
-        
+
       </ul>
 
       <ul class="menu">
@@ -151,18 +165,24 @@
     <!-------------------------------------------------------------------------------------------------------------------------------------------->
 
     <script>
+      // Toggle dark mode on theme button click
       const dark = document.getElementById('theme-button');
-
       function toggle_dark_mode() {
         var element = document.body;
         element.classList.toggle("dark-mode");
       }
-
       dark.addEventListener('click', toggle_dark_mode);
 
       function open198Git() {
         window.open('https://github.com/a4ojha/MediMinder_Pro', '_blank');
       }
+
+      // Function to set dark mode as default
+      function setDefaultDarkMode() {
+        document.body.classList.add("dark-mode");
+      }
+      // Set dark mode as default on page load
+      document.addEventListener('DOMContentLoaded', setDefaultDarkMode);
 
     </script>
       
