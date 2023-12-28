@@ -16,7 +16,7 @@
     </head>
 
     <body class="body">
-      <a class="logo-link" href="https://adonojha.com">
+      <a class="logo-link" href="https:/adonojha.com">
         <img id="logo-btn" class="logo" src="pictures/Logo4.png">
       </a>
     
@@ -60,6 +60,7 @@
         <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/adon_05" target="_blank">
           <img id="gitlogo" class="icon" src="pictures/x-logo.png">
           </a></li>
+
       </ul>
 
       <ul class="menu">
@@ -78,22 +79,24 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <!-------------------------------------------------------------------------------------------------------------------------------------------->
-
     <script>
       const dark = document.getElementById('theme-button');
 
+      // Toggle dark mode on theme button click
       function toggle_dark_mode() {
         var element = document.body;
         element.classList.toggle("dark-mode");
       }
-
       dark.addEventListener('click', toggle_dark_mode);
 
-      function displayInfo() {
-        element.classList.toggle("about");
+      // Function to set dark mode as default
+      function setDefaultDarkMode() {
+        document.body.classList.add("dark-mode");
       }
 
-    </script>
+      // Set dark mode as default on page load
+      document.addEventListener('DOMContentLoaded', setDefaultDarkMode);
       
+    </script>
 
   </html>
