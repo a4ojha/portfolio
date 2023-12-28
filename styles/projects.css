@@ -79,7 +79,6 @@
 
 .small-icon:hover {
     opacity: 0.7;
-    cursor: pointer;
 }
 
 .dark-mode .small-icon {
@@ -200,8 +199,7 @@
 
 .dark-mode .images-row,
 .dark-mode .images-row1,
-.dark-mode .videos-row,
-.dark-mode .documentation-row {
+.dark-mode .videos-row {
     background-color: rgb(27,27,27);
 }
 
@@ -234,29 +232,49 @@
     padding: 10px;
 }
 
-.documentation-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(246, 246, 246);
-    scroll-behavior: smooth;
-
+.document-portrait, .document-landscape {
+    border: 20px solid rgb(246, 246, 246);
+    display: block;
     margin: auto;
-    width: 55%;
-    min-width: 650px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.document {
-    width: 450px;
-    height: 500px;
-    margin: 10px;
+    margin-top: 10px;
 }
 
 .document-landscape {
-    width: 500px;
-    height: 300px;
-    margin: 10px;
+    width: 540px;
+    height: 360px;
+}
+
+.document-portrait {
+    width: 490px;
+    height: 645px;
+}
+
+.dark-mode .document-portrait,
+.dark-mode .document-landscape {
+    border-color: rgb(27,27,27)
+}
+
+.download-pdf-button {
+    display: inline-flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+    border-style: outset;
+    font-size: small;
+
+    transition: opacity 0.15s;
+}
+
+.dark-mode .download-pdf-button {
+    background-color: rgb(64, 64, 64);
+    color: white;
+    border-color:rgb(133, 133, 133);
+}
+
+.dark-mode .download-pdf-button:hover {
+    opacity: 0.8;
+    cursor: default;
 }
