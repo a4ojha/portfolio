@@ -16,7 +16,7 @@
     </head>
 
     <body class="body">
-      <a class="logo-link" href="https://adonojha.com">
+      <a class="logo-link" href="https:/adonojha.com">
         <img id="logo-btn" class="logo" src="pictures/Logo4.png">
       </a>
     
@@ -77,13 +77,21 @@
     <script>
       const dark = document.getElementById('theme-button');
 
+      // Toggle dark mode on theme button click
       function toggle_dark_mode() {
         var element = document.body;
         element.classList.toggle("dark-mode");
       }
-
       dark.addEventListener('click', toggle_dark_mode);
 
+      // Function to set dark mode as default
+      function setDefaultDarkMode() {
+        document.body.classList.add("dark-mode");
+      }
+
+      // Set dark mode as default on page load
+      document.addEventListener('DOMContentLoaded', setDefaultDarkMode);
+      
     </script>
       
 
