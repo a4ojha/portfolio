@@ -18,6 +18,9 @@
     border-radius: 10px;
     transition: transform 0.5s;
     overflow: hidden;
+    opacity: 0;
+    animation: 1s fadeInUp;
+    animation-fill-mode: forwards;
 }
 
 .project:hover {
