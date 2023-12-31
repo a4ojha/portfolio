@@ -3,6 +3,9 @@
     width: 55%;
     min-width: 600px;
     margin-top: 40px;
+    opacity: 0;
+    animation: 1s fadeInUp;
+    animation-fill-mode: forwards;
 }
 
 .intro-text:hover {
