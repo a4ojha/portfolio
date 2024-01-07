@@ -4,35 +4,29 @@
     margin: auto;
     padding: 20px;
     width: 50%;
-    margin-top: 20px;
-    /* border-style: solid; 
-    /* border-color: gray;        ugly outline */         
+    margin-top: 20px;      
 }
 
 .project {
     display: flex;
     margin-bottom: 20px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.5);
-
     border: 1px solid #404040;
     border-radius: 10px;
-    transition: transform 0.5s;
     overflow: hidden;
     opacity: 0;
-    animation: 1s fadeInUp;
-    animation-fill-mode: forwards;
+    animation: fadeInUp 1s forwards;
+
+    transition: transform 0.5s;
 }
 
 .project:hover {
+    transform: scale(1.03);
     cursor: default;
 }
 
 .dark-mode .project {
     box-shadow: 0 1px 5px rgba(255,255,255,0.5);
-}
-
-.project:hover {
-    transform: scale(1.03);
 }
 
 .project-media {
