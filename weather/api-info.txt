@@ -1,6 +1,6 @@
 API key: 9ab32927c576ec8ee1f6882fa5cbb92e
 
-FOR weather data, refer to: https://openweathermap.org/current#name
+For weather data, refer to: https://openweathermap.org/current#name
 
 Current weather API call: https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
