@@ -5,4 +5,4 @@ Weather web app developed through the help of [OpenWeatherMap API](https://openw
 **Frontend:** HTML, CSS
 
 
-Project is deployed online at [](https://adonojha.com/weather)
+Project is deployed online at [adonojha.com/weather](https://adonojha.com/weather)
