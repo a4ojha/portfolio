@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat&family=Poppins&family=Raleway&family=Roboto:wght@400;500;700&family=Silkscreen&family=Nunito&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/clear.png">
+</head>
+
+<body>
+  <div class="heading">
+    Get weather data on any city in the world!
+  </div>
+  <div class="card">
+    <div class="search">
+      <input type="text" placeholder="Enter city name" spellcheck="false">
+      <button><img src="images/search.png"></button>
+    </div>
+
+    <div class="error">
+      <p>Invalid city name</p>
+    </div>
+    
+    <div class="weather">
+      <img src="images/rain.png" class="weather-icon">
+      <h1 class="temp">22°C</h1>
+      <h2 class="city">Waterloo</h2>
+      <h3 class="country">CA</h3>
+      <div class="details">
+        <div class="col">
+          <img src="images/thermometer.png">
+          <div>
+            <p class="feels-like">21°C</p>
+            <p>Feels Like</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="images/sunrise.png">
+          <div>
+            <p class="sunrise">7:54 am</p>
+            <p>Sunrise&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <div class="col">
+          <img src="images/humidity.png">
+          <div>
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="images/wind.png">
+          <div>
+            <p class="wind">15 km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="weather.js"></script>
+  <script src="https://momentjs.com/downloads/moment.js"></script>
+    
+</body>
+</html>
