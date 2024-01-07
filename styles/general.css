@@ -19,9 +19,7 @@
     }
 }
 
-*, html {
-    scroll-behavior: smooth !important;
-}
+
 * {
     margin: 0;
     padding: 0;
@@ -52,7 +50,7 @@ body {
     position: relative;
     text-decoration: none;
     color: inherit;
-    font-weight: 700;
+    font-weight: bolder;
     display: inline-block;
     padding-bottom: 3px; /* Adjust to position the underline */
 }
