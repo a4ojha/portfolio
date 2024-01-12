@@ -124,6 +124,10 @@
     margin-bottom: 5px;
 }
 
+.project-heading-container img {
+    cursor: pointer;
+}
+
 .project-heading {
     font-size: 18px;
     font-weight: 700;
@@ -178,6 +182,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     background-color: rgb(246, 246, 246);
     overflow-x: auto;
     white-space: nowrap;
@@ -188,6 +193,20 @@
     min-width: 650px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.images-row,
+.images-row1 {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.videos-row video {
+    max-height: 375px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
 
 .images-row1 {
