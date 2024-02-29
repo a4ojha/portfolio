@@ -115,6 +115,7 @@ body {
 }
 
 .error {
+    color: red;
     text-align: left;
     margin-left: 10px;
     font-size: 14px;
