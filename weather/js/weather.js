@@ -168,7 +168,7 @@ function codeToCountry(code) {
         'MX': 'Mexico',
         'MY': 'Malaysia',
         'MZ': 'Mozambique',
-        'nan': 'Namibia',
+        'NA': 'Namibia',
         'NC': 'New Caledonia',
         'NE': 'Niger',
         'NF': 'Norfolk Island',
