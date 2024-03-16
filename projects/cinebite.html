@@ -25,10 +25,9 @@
         <div class="intro-text">
           <div class="project-heading-container">
             <span class="project-heading" style="font-size: 22px;">cineBite</span>
-            <img class="small-icon" src="../pictures/git.png" style="width: 22px; margin-left: 3px;" onclick="openCineBiteGit()">
-            <div class="source-code-toolkit">
-              Source code
-            </div>
+            <img title="Visit" class="small-icon" src="../pictures/newtab.png" style="width: 22px; margin-left: 3px;" onclick="openCineBite()">
+            <img title="Source code" class="small-icon" src="../pictures/git.png" style="width: 22px; margin-left: 3px;" onclick="openCineBiteGit()">
+        
           </div>
           <div class="skills-bar" style="margin-top: 2px;">
             <span class="skill-name">Java</span>
@@ -145,6 +144,10 @@
 
       function openCineBiteGit() {
         window.open('https://github.com/a4ojha/CineBite', '_blank');
+      }
+
+      function openCineBite() {
+        window.open('https://cinebite.adonojha.com', '_blank');
       }
 
       // Function to set dark mode as default
