@@ -14,3 +14,32 @@
     cursor: pointer;
 }
 
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.webring {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.webring a {
+    display: flex;
+    align-items: center;
+}
+
+.webring-text {
+    border-bottom: 1px solid;
+    font-weight: 700;
+    color: rgba(250, 204, 21, 0.8);
+    transition: opacity 0.15s;
+}
+
+.webring-text:hover {
+    opacity: 0.8;
+}
