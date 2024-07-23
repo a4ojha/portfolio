@@ -290,3 +290,19 @@
     opacity: 0.8;
     cursor: default;
 }
+
+.arrow-icon {
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+  
+#project-link:hover .arrow-icon {
+    opacity: 1;
+    animation: swooshRight 0.5s forwards;
+}
+
+@keyframes swooshRight {
+    0% { transform: translateX(-30%); }
+    100% { transform: none; }
+    
+}
