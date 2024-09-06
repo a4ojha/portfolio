@@ -6,6 +6,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat+Subrayada&family=Raleway&family=Roboto:wght@400;500;700&family=Silkscreen&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
       
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
       <link rel="stylesheet" href="../styles/general.css">
@@ -19,19 +20,32 @@
     <body class="body">
       <div class="header">
         <a class="logo-link" href="https://adonojha.com">
-          <img id="logo-btn" class="logo" src="../pictures/Logo4.png">
+          <img id="logo-btn" class="logo" src="../pictures/logo.svg">
         </a>
   
-        <div class="webring">
+        <!-- <div class="webring">
           <a href="https://ece.engineering/" target="_blank" title="Waterloo ECE Webring">
             <img src="../pictures/ece_ascii.svg" style="width: 1.75em; height: 1.75em; margin-right: 0.25em;">
             <span class="webring-text">ece.engineering</span>
           </a>
-        </div>
+        </div> -->
       </div>
+
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a id="projects-link" href="#" class="nav-link">projects</a>
+          </li>
+          <li class="nav-item">
+            <a id="experience-link" href="../experience/" class="nav-link">experience</a>
+          </li>
+          <li class="ece-engineering">
+            <a href="https://ece.engineering" target="_blank" class="nav-link">ece.engineering</a>
+            <i class="arrow-top-right fas fa-arrow-right"></i>
+          </li>
+      </nav>
     
       <div class="all-content-container">
-        <!-- Insert page here -->
         <div class="intro-text">
           <div class="project-heading-container">
             <span class="project-heading" style="font-size: 22px;">cineBite</span>
@@ -100,52 +114,11 @@
 
     </body>
 
-    <!-- FOOTER (stays in all html files) --------------------------------------------------------------------------------------------------------->
-    <footer class="footer">
-      <div class="waves">
-        <div class="wave" id="wave1"></div>
-        <div class="wave" id="wave2"></div>
-        <div class="wave" id="wave3"></div>
-        <div class="wave" id="wave4"></div>
-      </div>
-
-      <ul class="social-icon">
-        <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/adon-ojha-34b202259/" target="_blank">
-          <img id="inlogo" class="icon" src="../pictures/linkedin-png-linkedin-icon-1600.png">
-          </a></li>
-
-        <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/a4ojha" target="_blank">
-          <img id="gitlogo" class="icon" src="../pictures/git.png">
-          </a></li>
-          
-        <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/adon_05" target="_blank">
-          <img id="gitlogo" class="icon" src="../pictures/x-logo.png">
-          </a></li>
-
-        <!-- <li class="social-icon__item">
-        <a class="social-icon__link" href="https://leetcode.com/adon_codes/" target="_blank" title="LeetCode">
-            <img id="gitlogo" class="icon" src="../pictures/leetcode.webp">
-        </a></li> -->
-      </ul>
-
-      <ul class="menu">
-        <li class="menu__item"><a class="menu__link" href="https://www.adonojha.com">Home</a></li>
-        <li class="menu__item"><a class="menu__link" href="https://adonojha.com/projects">Projects</a></li>
-        <li class="menu__item"><a class="menu__link" href="https://adonojha.com/contact">Contact</a></li>
-      </ul>
-      
-      <div class="theme-bar" id="theme-button">
-        <img class="icon" style="width: 15px; margin: 0; align-self: center;"src="../pictures/theme-icon.png">
-        <p class="theme-text">Theme</p>
-      </div>
-    </footer>
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-    <!-------------------------------------------------------------------------------------------------------------------------------------------->
-
     <script>
+      // hard code dark mode
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+
       // Toggle dark mode on theme button click
       const dark = document.getElementById('theme-button');
       function toggle_dark_mode() {

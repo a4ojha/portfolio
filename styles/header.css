@@ -1,9 +1,9 @@
 .logo-link {
     display: inline-block;
-    width: 200px;
-    -webkit-filter: drop-shadow(1px 1px 2px rgba(43, 43, 43, 0.6));
-    margin-top: 20px;
-    margin-left: 20px;
+    width: 9.5rem;
+    margin-top: 22px;
+    margin-left: 22px;
+    position: fixed;
 }
 
 .logo {

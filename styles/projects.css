@@ -2,9 +2,6 @@
     max-width: 800px;
     min-width: 600px;
     margin: auto;
-    padding: 20px;
-    width: 50%;
-    margin-top: 20px;      
 }
 
 .project {
@@ -115,6 +112,11 @@
 
 .dark-mode .skill-name:hover {
     background-color: rgb(40,40,40);
+}
+
+.all-content-container {
+    margin: 10rem 15rem 5rem 15rem;
+    /* border: red solid; */
 }
 
 .project-heading-container {
