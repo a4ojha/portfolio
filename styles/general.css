@@ -60,7 +60,7 @@ a {
 html, body {
 	margin: 0;
 	font-family: "Raleway", sans-serif;
-	background: radial-gradient(circle at 50% -150%, #3E3E3E, #121212);
+	background: radial-gradient(circle at 50% -150%, #3E3E3E, #000000);
 	background-attachment: fixed;
 	background-size: cover;
 	cursor: cell;
