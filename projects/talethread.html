@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>TaleThread</title>
+      <link rel="icon" type="image/x-con" href="../pictures/AO-logo.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat+Subrayada&family=Raleway&family=Roboto:wght@400;500;700&family=Silkscreen&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <link rel="stylesheet" href="../styles/general.css">
+      <link rel="stylesheet" href="../styles/header.css">
+      <link rel="stylesheet" href="../styles/intro.css">
+      <link rel="stylesheet" href="../styles/footer.css">
+      <link rel="stylesheet" href="../styles/projects.css">
+      <link rel="stylesheet" href="../animated-footer.css">
+    </head>
+
+    <body class="body">
+      <div class="header">
+        <a class="logo-link" href="https://adonojha.com">
+          <img id="logo-btn" class="logo" src="../pictures/logo.svg">
+        </a>
+  
+        <!-- <div class="webring">
+          <a href="https://ece.engineering/" target="_blank" title="Waterloo ECE Webring">
+            <img src="../pictures/ece_ascii.svg" style="width: 1.75em; height: 1.75em; margin-right: 0.25em;">
+            <span class="webring-text">ece.engineering</span>
+          </a>
+        </div> -->
+      </div>
+
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a id="projects-link" href="#" class="nav-link">projects</a>
+          </li>
+          <li class="nav-item">
+            <a id="experience-link" href="../experience/" class="nav-link">experience</a>
+          </li>
+          <li class="ece-engineering">
+            <a href="https://ece.engineering" target="_blank" class="nav-link">ece.engineering</a>
+            <i class="arrow-top-right fas fa-arrow-right"></i>
+          </li>
+      </nav>
+    
+      <div class="all-content-container">
+        <div class="intro-text">
+          <div class="project-heading-container">
+            <span class="project-heading" style="font-size: 22px;">TaleThread</span>
+            <!-- <img title="Visit" class="small-icon" src="../pictures/newtab.png" style="width: 22px; margin-left: 3px;" onclick="openCineBite()"> -->
+            <img title="Source code" class="small-icon" src="../pictures/git.png" style="width: 22px; margin-left: 3px;" onclick="openTaleThreadSource()">
+        
+          </div>
+          <div class="skills-bar" style="margin-top: 2px;">
+            <span class="skill-name">GPT 4o</span>
+            <span class="skill-name">Angular</span>
+            <span class="skill-name">Django REST Framework</span>
+            <span class="skill-name">SQLite</span>
+            <span class="skill-name">Tailwind</span>
+          </div>
+          <p class="body" style="margin-bottom: 20px; margin-top: 10px;">
+            "Finish the story" party game as a social media concept. Creative writing assistance through GPT-4o API.
+          </p>
+          <p class="body" style="margin-bottom: 20px;">
+            Building with <a href="github.com/self-sasi" class="link">Sarthak Singh</a> and <a href="https://github.com/KushagraKapoor" class="link">Kushagra Kapoor</a>
+          </p>
+        </div>
+
+        <!-- Video -->
+        <div class="videos-row">
+          <video controls="controls">
+            <source src="project-pictures/Talethread.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div style="margin-bottom: 30px;"></div>
+        <div class="gradient-line odd"></div>
+         
+        <div style="margin-bottom: 30px;"></div>
+      </div>
+
+    </body>
+
+    <script>
+      // hard code dark mode
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+
+      // Toggle dark mode on theme button click
+      const dark = document.getElementById('theme-button');
+      function toggle_dark_mode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+      dark.addEventListener('click', toggle_dark_mode);
+
+      function openTaleThreadSource() {
+        window.open('https://github.com/self-sasi/talethread', '_blank');
+      }
+
+      // Function to set dark mode as default
+      function setDefaultDarkMode() {
+        document.body.classList.add("dark-mode");
+      }
+      // Set dark mode as default on page load
+      document.addEventListener('DOMContentLoaded', setDefaultDarkMode);
+
+    </script>
+      
+
+  </html>
