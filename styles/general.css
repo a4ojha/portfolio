@@ -237,15 +237,15 @@ html, body {
 	height: 6px;
 	border: rgb(60, 60, 60) solid;
 	border-radius: 5px;
-	animation: 1s forwards 6.5s disappear
+	/* animation: 1s forwards 6.5s disappear */
 }
 
 .progress {
 	background-color: rgb(107, 107, 107);
-	width: 0;
+	width: 100%;
 	height: inherit;
 	border-radius: inherit;
-	animation: loading 7s cubic-bezier(0.4, 0, 0.6, 1) forwards;
+	/* animation: loading 7s cubic-bezier(0.4, 0, 0.6, 1) forwards; */
 }
 
 @keyframes loading {
@@ -404,12 +404,27 @@ a {
 	animation: 1s forwards var(--appear-delay) appear; 
 	display: flex;
 	gap: 4rem;
+	justify-content: center;
+
 	position: absolute;
 	top: 20%;
-	left: 25vw;
-	/* margin-left: 10vw; */
-	/* margin-right: 10vw; */
+	margin-left: 20vw;
+	margin-right: 20vw;
+
 	/* border: red solid; */
+}
+
+@media screen and (max-width: 750px) {
+	.greeting {
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.greeting {
+		margin-left: 25vw;
+	}
+	
 }
 
 .title span {
@@ -478,6 +493,7 @@ a {
 }
 
 .gradient-blur {
+	/* border: blue solid; */
 	position: absolute;
 	top: 4rem;
 	width: 20rem;
