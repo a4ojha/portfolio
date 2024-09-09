@@ -79,7 +79,7 @@ html, body {
 }
 
 :root {
-	--appear-delay: 0s;	/* set to 7.5s */
+	--appear-delay: 7.5s;	/* set to 7.5s for loading animation */
 }
 
 .noselect {
