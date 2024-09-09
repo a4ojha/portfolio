@@ -237,15 +237,17 @@ html, body {
 	height: 6px;
 	border: rgb(60, 60, 60) solid;
 	border-radius: 5px;
-	/* animation: 1s forwards 6.5s disappear */
+	animation: 1s forwards 6.5s disappear
 }
 
 .progress {
 	background-color: rgb(107, 107, 107);
-	width: 100%;
-	height: inherit;
+	width: 0%;
+	height: 2px;
 	border-radius: inherit;
-	/* animation: loading 7s cubic-bezier(0.4, 0, 0.6, 1) forwards; */
+	animation: loading 7s cubic-bezier(0.4, 0, 0.6, 1) forwards;
+	top: -0.09rem;
+	position: absolute;
 }
 
 @keyframes loading {
