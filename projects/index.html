@@ -16,7 +16,7 @@
       <link rel="stylesheet" href="../styles/projects.css">
       <link rel="stylesheet" href="../animated-footer.css">
     </head>
-
+    
     <body>
       <div class="header">
         <a class="logo-link" href="../">
@@ -29,7 +29,7 @@
             <span class="webring-text">ece.engineering</span>
           </a>
         </div> -->
-    </div>
+      </div>
 
     <nav class="navbar">
       <ul class="nav-list">
@@ -47,6 +47,43 @@
 
       <div class="all-content-container">
         <div class="projects-container">
+          <!-- Project 1 -->
+          <div class="project">
+            <div class="project-content">
+              <div class="project-description">
+                <a href="https://devpost.com/software/guardian-et4n25">
+                  <span class="project-title">Guardian</span>
+                </a>
+                <a title="Source code" href="https://github.com/a4ojha/guardian" target="_blank">
+                  <img class="small-icon" src="../pictures/git.png">
+                </a>
+                <a title="Devpost" href="https://devpost.com/software/guardian-et4n25" target="_blank">
+                  <img class="small-icon" src="../pictures/book.svg">
+                </a>
+                <a title="Visit" href="https://yourguardian.co" target="_blank">
+                  <img class="small-icon" src="../pictures/newtab.png">
+                </a>
+                <p>Machine learning powered patient monitoring system.<p>
+              </div>
+              <div class="skills-bar">
+                <span class="skill-name">OpenCV</span>
+                <span class="skill-name">Roboflow</span>
+                <span class="skill-name">GPT 4o</span>
+                <span class="skill-name">Speechify</span>
+                <span class="skill-name">Twilio</span>
+                <span class="skill-name">Google Chirp API</span>
+                <span class="skill-name">Next.js</span>
+                <span class="skill-name">Tailwind</span>
+                <span class="skill-name">Figma</span>
+                <span class="skill-name">MongoDB</span>
+              </div>
+            </div>
+            <div class="project-media">
+              <a href="https://yourguardian.co" target="_blank">
+                <img src="project-pictures/guardian-thumbnail.png">
+              </a>
+            </div>
+          </div>
           <!-- Project 1 -->
           <div class="project">
             <div class="project-media">
@@ -210,7 +247,7 @@
             </div>
             <div class="project-media">
               <a href="https://github.com/a4ojha/Battleship" target="_blank">
-                <img src="project-pictures/battleship thumbnail.png">
+                <img src="project-pictures/battleship-thumbnail.png">
               </a>
             </div>
           </div>
@@ -245,10 +282,10 @@
           <div class="project">
             <div class="project-content">
               <div class="project-description">
-                <a href="https://adonojha.com/projects/sumobot">
+                <a href="./sumobot.html">
                   <span class="project-title">Mindstorms EV3 SumoBot</span>
                 </a>
-                <a href="https://adonojha.com/projects/sumobot">
+                <a href="./sumobot.html">
                   <img class="small-icon" src="../pictures/newtab.png">
                 </a>
                 <p>Worked with a team to construct a fully autonomous EV3 sumobot for a competition at Ontario Tech University.<p>
@@ -259,7 +296,7 @@
               </div>
             </div>
             <div class="project-media">
-              <a href="https://adonojha.com/projects/sumobot">
+              <a href="./sumobot.html">
                 <img src="project-pictures/sumobots.png">  
               </a>
             </div>
@@ -287,7 +324,7 @@
       </div>
 
       <!-- Socials -->
-      <div class="socials">
+      <div class="socials" id="socials-div">
         <a href="https://github.com/a4ojha" target="_blank" class="nav-link" id="github">
           <div class="tooltip">
             github/a4ojha
@@ -314,6 +351,12 @@
     </body>
 
     <script>
+      document.getElementsByClassName("socials")[0].style.animationDelay = "0s";
+      document.getElementsByClassName("socials")[0].style.animationDuration = "0s";
+
+      document.getElementsByClassName("navbar")[0].style.animationDelay = "0s";
+      document.getElementsByClassName("navbar")[0].style.animationDuration = "0s";
+
       // hard code dark mode
       var element = document.body;
       element.classList.toggle("dark-mode");

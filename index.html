@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adon Ojha</title>
-    <link rel="stylesheet" href="./styles/general.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat+Subrayada&family=Raleway&family=Roboto:wght@400;500;700&family=Silkscreen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="../styles/header.css">
+
 </head>
 <body class="noselect">
   <!-- loading animation -->
@@ -47,11 +50,17 @@
     <div class="progress"></div>
   </div>
 
-  <!-- <div id="skip">
+  <div id="skip">
     <span>skip</span>
     <i class="fas fa-arrow-right"></i>
-  </div> -->
+  </div>
 
+  <!-- top left logo -->
+  <div class="header">
+    <a class="logo-link" href="./">
+      <img id="logo-btn" class="logo" src="../pictures/logo.svg">
+    </a>  
+  </div>  
 
   <!-- Navbar -->
   <nav class="navbar">
@@ -126,10 +135,29 @@
       </svg>              
     </a>
   </div>
-  
-  
-  
-  
-  <script src="./script.js"></script>
+    
 </body>
+
+<script>
+  document.getElementById("skip").addEventListener("click", () => {
+    document.getElementsByClassName("logo-container")[0].remove();
+    document.getElementsByClassName("loading-bar")[0].style.opacity = "0";
+    document.getElementById("skip").style.display = "none";
+    
+    document.getElementsByClassName("navbar")[0].style.animationDelay = "0.15s";
+    document.getElementsByClassName("navbar")[0].style.animation = "fadeInUp 0.5s ease-in-out forwards";
+    
+    document.getElementsByClassName("socials")[0].style.animationDelay = "0s";
+    document.getElementsByClassName("socials")[0].style.animation = "fadeInUp 0.5s ease-in-out forwards";
+    
+    document.getElementsByClassName("header")[0].style.opacity = "1";
+    document.getElementsByClassName("header")[0].style.animation = "fadeInUp 0.5s ease-in-out forwards";
+    
+    document.getElementsByClassName("greeting")[0].style.animationDelay = "0s";
+    document.getElementsByClassName("greeting")[0].style.marginTop = "15rem";
+    document.getElementsByClassName("greeting")[0].style.animation = "fadeInUp 0.5s ease-in-out forwards";
+
+
+  });
+</script>
 </html>

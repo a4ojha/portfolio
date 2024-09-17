@@ -348,7 +348,8 @@ a {
 	padding: 0.7rem 1rem 0.3rem 1rem;
 
 	opacity: 0;
-	animation: 1s forwards var(--appear-delay) appear;
+	animation: 1s forwards appear;
+	animation-delay: var(--appear-delay);
 }
 
 .socials a > svg > path {
