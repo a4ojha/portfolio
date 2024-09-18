@@ -10,7 +10,7 @@
 /* Safari, Chrome and Opera > 12.1 */
 @keyframes fadeInUp {
     0% {
-        transform: translateY(20%);
+        transform: translateY(10%);
         opacity: 0;
     }
     100% {
@@ -79,7 +79,7 @@ html, body {
 }
 
 :root {
-	--appear-delay: 7.5s;	/* set to 7.5s for loading animation */
+	--appear-delay: 4s;	/* set to 4s for loading animation */
 }
 
 .noselect {
@@ -107,7 +107,7 @@ html, body {
 	position: absolute;
 
 	/* move to top left after delay */
-	animation: 1s forwards 6.5s disappear, 1s forwards var(--appear-delay) appear, 0s forwards var(--appear-delay) moveToTopLeft;
+	animation: 1s forwards 3.5s disappear, 1s forwards var(--appear-delay) appear, 0s forwards var(--appear-delay) moveToTopLeft;
 }
 
 @keyframes moveToTopLeft {
@@ -136,8 +136,8 @@ html, body {
 
 #infinity-svg {
 	/* border: blue solid; */
-	animation: rotateInfinity 2s forwards;
-	animation-delay: 3s;
+	animation: rotateInfinity 1s forwards;
+	animation-delay: 2s;
 }
 
 @keyframes rotateInfinity {
@@ -155,7 +155,7 @@ html, body {
 	stroke-width: 2;
 	stroke: white;
 	fill-opacity: 0;
-	animation: draw 3s forwards, removeStroke 2.5s forwards, fadeInFill 2.5s forwards, redraw 0s 10.5s forwards;
+	animation: draw 2s forwards, removeStroke 2s forwards, fadeInFill 2s forwards, redraw 0s 10.5s forwards;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
@@ -215,7 +215,7 @@ html, body {
 	opacity: 0;
 	position: absolute;
 	animation: appearLater 1s forwards;
-	animation-delay: 5s;
+	animation-delay: 2.5s;
 }
 
 @keyframes appearLater {
@@ -237,7 +237,7 @@ html, body {
 	height: 6px;
 	border: rgb(60, 60, 60) solid;
 	border-radius: 5px;
-	animation: 1s forwards 6.5s disappear
+	animation: 1s forwards 3.5s disappear
 }
 
 .progress {
@@ -245,7 +245,7 @@ html, body {
 	width: 0%;
 	height: 2px;
 	border-radius: inherit;
-	animation: loading 7s cubic-bezier(0.4, 0, 0.6, 1) forwards;
+	animation: loading 3.5s cubic-bezier(0.4, 0, 0.6, 1) forwards;
 	top: -0.09rem;
 	position: absolute;
 }
@@ -265,7 +265,7 @@ html, body {
 	left: 48.7%;
 	color: white;
 	opacity: 0;
-	animation: 1s forwards 0.5s appear, 1s forwards 6.5s disappear;
+	animation: 1s forwards 0.5s appear, 1s forwards 3.5s disappear, 0s forwards 4s remove;
 
 	display: flex;
 	gap: 0.3rem;
@@ -273,6 +273,12 @@ html, body {
 	align-items: center;
 
 	cursor: pointer;
+}
+
+@keyframes remove {
+	to {
+		display: none;
+	}
 }
 
 #skip i {
@@ -285,6 +291,7 @@ html, body {
 	position: fixed;
 	right: 2rem;
 	top: 2rem;
+	/* border: red solid; */
 }
 
 ul {
@@ -467,6 +474,17 @@ a {
 	opacity: 1;
 }
 
+#popup-image {
+	display: none;
+	width: 15rem;
+	height: 12rem;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: opacity 0.2s ease;
+	z-index: 100;
+}
+
 .img-tooltip {
 	position: absolute;
 	top: -8.5rem;
@@ -549,4 +567,113 @@ a {
 	transform: rotate(10deg) scale(0.9);
 	z-index: 9;
 	background: linear-gradient(#393939, #1F1F1F);
+}
+
+/* experience page */
+.experience-card {
+	width: 100%;
+	border: #505050 solid 1px;
+	/* height: 50rem; */
+	border-radius: 2rem;
+	box-shadow: #ffffff15 0rem 0rem 3rem;
+	margin-bottom: 5rem;
+
+	animation: fadeInUp 1s forwards;
+}
+
+.img-container {
+	height: 60%;
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+	overflow: hidden;
+
+}
+
+.img-container img {
+	width: 100%;
+	border-radius: inherit;
+}
+
+.exp-content {
+	margin: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	/* border: red solid 1px; */
+	margin-bottom: 2.5rem;
+}
+
+.exp-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	/* border: red solid 1px; */
+}
+
+.exp-title {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+
+.exp-title h2 {
+	font-size: 1.3rem;
+}
+
+.exp-location {
+	margin-left: -0.1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.exp-location:hover {
+	opacity: 0.8;
+}
+
+.exp-location span {
+	color: #9D9D9D;
+	font-size: 1rem;
+	font-style: italic;
+}
+
+.newtab {
+	color: #9D9D9D;
+	width: 0.8rem;
+	height: 0.8rem;
+}
+
+.technologies-row {
+	/* border: red solid 1px; */
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+}
+
+@keyframes fadeInSideways {
+	0% {
+		transform: translateX(2%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+.technologies-row img {
+	opacity: 0;
+	width: 2rem;
+	height: 2rem;
+	animation: fadeInSideways 1s forwards;
+	animation-delay: var(--delay, 0s);
+}
+
+.exp-description ul {
+	list-style-type: disc;
+	list-style-position: inside;
+	flex-direction: column;
+	gap: 0.2rem;
+	margin-left: 1.5rem;
 }

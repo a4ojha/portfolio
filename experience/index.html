@@ -38,7 +38,92 @@
       </nav>
 
       <div class="all-content-container">
-        <p>coming soon...</p>
+
+        <!-- OPG -->
+        <div class="experience-card">
+          <div class="img-container">
+            <img src="../assets/opg.jpeg" alt="opg">
+          </div>
+
+          <div class="exp-content">
+            <div class="exp-info">
+              <div class="exp-title">
+                <h2>Software Engineer</h2>
+                <a class="exp-location" href="https://opg.com" target="_blank">
+                  <span>Ontario Power Generation</span>
+                  <img class="newtab" src="../assets/newtab.svg">
+                </a>
+              </div>
+              <div class="exp-duration">
+                <span>May 2024 - Aug. 2024</span>
+              </div>
+            </div>
+            <div class="technologies-row">
+              <img src="../assets/technologies/angular.svg" alt="angular">
+              <img src="../assets/technologies/typescript.svg" alt="typescript">
+              <img src="../assets/technologies/csharp.svg" alt="csharp">
+              <img src="../assets/technologies/dotnet.svg" alt="dotnet">
+              <img src="../assets/technologies/python.svg" alt="python">
+              <img src="../assets/technologies/ms-sql-server.svg" alt="sql">
+              <img src="../assets/technologies/mistral.svg" alt="mistral">
+              <img src="../assets/technologies/figma.svg" alt="figma">
+            </div>
+            <div class="exp-description">
+              <ul>
+                <li>
+                  Led 4+ full-stack software development projects using ASP.NET, Angular, and Microsoft SQL Server on Azure platforms, increasing business efficiency by 40%.
+                </li>
+                <li>
+                  Developed a web app integrating Mistral AI API for real-time operator performance insights, cutting data retrieval time by 50%.
+                </li>
+                <li>
+                  Created a Python script with Pandas to analyze nuclear equipment history, reducing manual data processing from days to seconds and saving 30+ labor hours per cycle.
+                </li>
+                <li>
+                  Designed a UI/UX for a cross-departmental backlog tracker, projected to support 300 daily users.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- UWFE -->
+        <div class="experience-card">
+          <div class="img-container">
+            <img src="../assets/uwfe.JPG" alt="opg">
+          </div>
+
+          <div class="exp-content">
+            <div class="exp-info">
+              <div class="exp-title">
+                <h2>Firmware Engineer</h2>
+                <a class="exp-location" href="https://www.uwfsae.ca/" target="_blank">
+                  <span>UW Formula Electric</span>
+                  <img class="newtab" src="../assets/newtab.svg">
+                </a>
+              </div>
+              <div class="exp-duration">
+                <span>Sep. 2023 - Dec. 2023</span>
+              </div>
+            </div>
+            <div class="technologies-row">
+              <img src="../assets/technologies/c.svg" alt="c">
+              <img src="../assets/technologies/stm32.png" alt="stm32">
+            </div>
+            <div class="exp-description">
+              <ul>
+                <li>
+                  Microcontroller programming in C for an STM32 Nucleo
+                </li>
+                <li>
+                  Soldered and configured shift registers for an LED panel
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+
       </div>
 
       <!-- Socials -->
@@ -71,6 +156,13 @@
     <script src="../script.js"></script>
     
     <script>
+      // technologies row animation
+      const images = document.querySelectorAll('.technologies-row img');
+
+      images.forEach((img, index) => {
+        img.style.setProperty('--delay', `${index * 0.15}s`); 
+      });
+
       // hard code dark mode
       var element = document.body;
       element.classList.toggle("dark-mode");

@@ -84,11 +84,11 @@
     <div class="text">
       <div class="title">
         <span>developer.  designer. </span>
-        <span class="purple-gradient">
+        <span class="purple-gradient" id="trigger-popup">
           engineering student.
-          <div class="img-tooltip">
-            <img src="./assets/engineering.jpeg" alt="engineering">
-          </div>
+          <!-- <div class="img-tooltip">
+          </div> -->
+          <img id="popup-image" src="./assets/engineering.jpeg" alt="engineering">
         </span>
       </div>
       <span class="subtitle">
@@ -103,7 +103,7 @@
     <div class="image">
       <div class="gradient-blur"></div>
       <div class="card">
-        <img src="./assets/me.jpeg" alt="me">
+        <img src="./assets/me2.jpeg" alt="me">
       </div>
       <div class="card card-2"></div>
     </div>
@@ -159,5 +159,42 @@
 
 
   });
+
+  let img = document.getElementById("popup-image");
+  const triggerElement = document.getElementById("trigger-popup");
+    
+  triggerElement.addEventListener("mouseover", () => {
+    console.log("hovered");
+  
+    img.style.display = "block";
+    setTimeout(() => { 
+      img.style.opacity = "1"; 
+    }, 10);
+    
+    const move = (e) => {
+      try {
+        var x = e.pageX;
+        var y = e.pageY;
+      } catch (e) {}
+  
+      const offsetX = -660;
+      const offsetY = -330;
+  
+      img.style.left = (x + offsetX) + "px";
+      img.style.top = (y + offsetY) + "px";
+    };
+  
+    document.addEventListener("mousemove", (e) => {
+      move(e);
+    });
+  });
+  
+  triggerElement.addEventListener("mouseleave", () => {
+    img.style.opacity = "0";
+    setTimeout(() => {
+      img.style.display = "none"; 
+    }, 200);
+  });
+
 </script>
 </html>
