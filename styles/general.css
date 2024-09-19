@@ -79,7 +79,7 @@ html, body {
 }
 
 :root {
-	--appear-delay: 4s;	/* set to 4s for loading animation */
+	--appear-delay: 3s;	/* set to 4s for loading animation */
 }
 
 .noselect {
@@ -107,7 +107,7 @@ html, body {
 	position: absolute;
 
 	/* move to top left after delay */
-	animation: 1s forwards 3.5s disappear, 1s forwards var(--appear-delay) appear, 0s forwards var(--appear-delay) moveToTopLeft;
+	animation: 1s forwards 2.5s disappear, 1s forwards var(--appear-delay) appear, 0s forwards var(--appear-delay) moveToTopLeft;
 }
 
 @keyframes moveToTopLeft {
@@ -137,7 +137,7 @@ html, body {
 #infinity-svg {
 	/* border: blue solid; */
 	animation: rotateInfinity 1s forwards;
-	animation-delay: 2s;
+	animation-delay: 1s;
 }
 
 @keyframes rotateInfinity {
@@ -155,7 +155,7 @@ html, body {
 	stroke-width: 2;
 	stroke: white;
 	fill-opacity: 0;
-	animation: draw 2s forwards, removeStroke 2s forwards, fadeInFill 2s forwards, redraw 0s 10.5s forwards;
+	animation: draw 1s forwards, removeStroke 1s forwards, fadeInFill 1s forwards, redraw 0s 10.5s forwards;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
@@ -215,7 +215,7 @@ html, body {
 	opacity: 0;
 	position: absolute;
 	animation: appearLater 1s forwards;
-	animation-delay: 2.5s;
+	animation-delay: 1.5s;
 }
 
 @keyframes appearLater {
@@ -237,7 +237,7 @@ html, body {
 	height: 6px;
 	border: rgb(60, 60, 60) solid;
 	border-radius: 5px;
-	animation: 1s forwards 3.5s disappear
+	animation: 1s forwards var(--appear-delay) disappear
 }
 
 .progress {
@@ -245,7 +245,7 @@ html, body {
 	width: 0%;
 	height: 2px;
 	border-radius: inherit;
-	animation: loading 3.5s cubic-bezier(0.4, 0, 0.6, 1) forwards;
+	animation: loading 2.5s cubic-bezier(0.4, 0, 0.6, 1) forwards;
 	top: -0.09rem;
 	position: absolute;
 }
@@ -265,7 +265,7 @@ html, body {
 	left: 48.7%;
 	color: white;
 	opacity: 0;
-	animation: 1s forwards 0.5s appear, 1s forwards 3.5s disappear, 0s forwards 4s remove;
+	animation: 1s forwards appear, 1s forwards var(--appear-delay) disappear, 0s forwards 4s remove;
 
 	display: flex;
 	gap: 0.3rem;
